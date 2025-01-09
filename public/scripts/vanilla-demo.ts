@@ -12,7 +12,7 @@ const greetingEntryList = Object.entries(Greeting); // [[key, value], ...]
 // JavaScript Markup and Event Binding & Mount DOM Element Node
 
 /* -------------------------------------------------------------------------- */
-/* Creating DOM Element Node                                                 */
+/* Creating DOM Element Node                                                  */
 /* -------------------------------------------------------------------------- */
 
 // 제어 대상 생성 o / 참조 x
@@ -26,10 +26,10 @@ const changeButton = document.createElement("button");
 changeButton.setAttribute("type", "button");
 changeButton.textContent = "인사말";
 
-console.group("DOM 요소 노드");
-console.dir(heading);
-console.dir(changeButton);
-console.groupEnd();
+// console.group('DOM 요소 노드');
+// console.dir(heading);
+// console.dir(changeButton);
+// console.groupEnd();
 
 // 버튼에 이벤트 바인딩
 changeButton?.addEventListener("click", handleChangeGreetMessage);
